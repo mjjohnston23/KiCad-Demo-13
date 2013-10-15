@@ -1,0 +1,205 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "15 oct 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R3
+U 1 1 525DBE97
+P 4800 2050
+F 0 "R3" V 4880 2050 40  0000 C CNN
+F 1 "330" V 4807 2051 40  0000 C CNN
+F 2 "~" V 4730 2050 30  0000 C CNN
+F 3 "~" H 4800 2050 30  0000 C CNN
+	1    4800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM555N U1
+U 1 1 525DBEA7
+P 3100 1350
+F 0 "U1" H 3100 1450 70  0000 C CNN
+F 1 "LM555N" H 3100 1250 70  0000 C CNN
+F 2 "" H 3100 1350 60  0000 C CNN
+F 3 "" H 3100 1350 60  0000 C CNN
+	1    3100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 525DBEAD
+P 4200 2250
+F 0 "R2" V 4280 2250 40  0000 C CNN
+F 1 "1k" V 4207 2251 40  0000 C CNN
+F 2 "~" V 4130 2250 30  0000 C CNN
+F 3 "~" H 4200 2250 30  0000 C CNN
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 525DBEB3
+P 4200 800
+F 0 "R1" V 4280 800 40  0000 C CNN
+F 1 "4.7k" V 4207 801 40  0000 C CNN
+F 2 "~" V 4130 800 30  0000 C CNN
+F 3 "~" H 4200 800 30  0000 C CNN
+	1    4200 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 525DBF03
+P 2800 2500
+F 0 "C1" H 2800 2600 40  0000 L CNN
+F 1 "0.1 uF" H 2806 2415 40  0000 L CNN
+F 2 "~" H 2838 2350 30  0000 C CNN
+F 3 "~" H 2800 2500 60  0000 C CNN
+	1    2800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 525DBF1B
+P 4200 2750
+F 0 "C2" H 4250 2850 40  0000 L CNN
+F 1 "10 uF" H 4250 2650 40  0000 L CNN
+F 2 "~" H 4300 2600 30  0000 C CNN
+F 3 "~" H 4200 2750 300 0000 C CNN
+	1    4200 2750
+	1    0    0    1   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 525DC1B8
+P 4200 1600
+F 0 "RV1" H 4200 1500 50  0000 C CNN
+F 1 "100kPOT" H 4200 1600 50  0000 C CNN
+F 2 "~" H 4200 1600 60  0000 C CNN
+F 3 "~" H 4200 1600 60  0000 C CNN
+	1    4200 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 525DC1C7
+P 4800 1400
+F 0 "D1" H 4800 1500 50  0000 C CNN
+F 1 "LED" H 4800 1300 50  0000 C CNN
+F 2 "~" H 4800 1400 60  0000 C CNN
+F 3 "~" H 4800 1400 60  0000 C CNN
+	1    4800 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 1150 4800 1150
+Wire Wire Line
+	4800 1150 4800 1200
+Wire Wire Line
+	4800 1600 4800 1800
+Wire Wire Line
+	4200 1350 3800 1350
+Wire Wire Line
+	4200 1850 4200 2000
+Wire Wire Line
+	4350 1600 4350 1900
+Wire Wire Line
+	4350 1900 4200 1900
+Connection ~ 4200 1900
+Wire Wire Line
+	4200 2550 4200 2500
+Wire Wire Line
+	4800 2950 4800 2300
+Wire Wire Line
+	2800 2950 4800 2950
+Wire Wire Line
+	2800 2700 2800 2950
+Connection ~ 4200 2950
+Wire Wire Line
+	2800 2300 2100 2300
+Wire Wire Line
+	2100 2300 2100 1400
+Wire Wire Line
+	2100 1400 2400 1400
+Wire Wire Line
+	4200 2500 3800 2500
+Wire Wire Line
+	3800 2500 3800 1550
+Wire Wire Line
+	3800 2000 1800 2000
+Wire Wire Line
+	1800 2000 1800 1150
+Wire Wire Line
+	1800 1150 2400 1150
+Connection ~ 3800 2000
+Wire Wire Line
+	4200 550  1550 550 
+Wire Wire Line
+	1550 550  1550 1650
+Wire Wire Line
+	1550 1650 2400 1650
+Wire Wire Line
+	4200 1050 4200 1350
+$Comp
+L GND #PWR01
+U 1 1 525DC34D
+P 3850 2950
+F 0 "#PWR01" H 3850 2950 30  0001 C CNN
+F 1 "GND" H 3850 2880 30  0001 C CNN
+F 2 "" H 3850 2950 60  0000 C CNN
+F 3 "" H 3850 2950 60  0000 C CNN
+	1    3850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 525DC35C
+P 3100 550
+F 0 "#PWR02" H 3100 650 30  0001 C CNN
+F 1 "VCC" H 3100 650 30  0000 C CNN
+F 2 "" H 3100 550 60  0000 C CNN
+F 3 "" H 3100 550 60  0000 C CNN
+	1    3100 550 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
